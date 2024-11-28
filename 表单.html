@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>了解表单</title>
+</head>
+<body>
+    <form action="www.test" method="get">
+        <!-- 表单元素 -->
+        <!-- text文本框  用户可以填写任何文字 -->
+        <!-- maxlength最多只能输入的数 for和id属性相同 -->
+        <label for="user">用户名:<input type="text" id="user" name="username" maxlength="12"></label>
+        <!-- lable标签为inp元素定义标注标签 -->
+        <br/>
+        <!-- password用户看不到输入文本 -->
+        <label for="mima">密码:<input type="password" id="mima" name="pwd"></label>
+        <br/>
+        <!-- radio定义单元按钮 -->
+        <!-- name是表单元素名字，这里性别单选按钮必须有相同的名字name才可以实现多选1 -->
+        <!-- value是给后台人员使用 -->
+        <label for="man">性别：男<input type="radio" id="man" name="sex" value="男"></label>
+        <label for="woman">女 <input type="radio" id="woman" name="sex" value="女"></label>
+        <br/>
+        <!-- 单选按钮和复选按钮何以设置checked属性，当页面打开时默认选择这个按钮 -->
+        <!-- checkbox复选框也可单选 -->
+         <!-- 单选按钮和复选按钮都要有相同的name值 -->
+        爱好:吃饭<input type="checkbox" name="hobby">睡觉<input type="checkbox" name="hobby">
+            打游戏<input type="checkbox" name="hobby">
+        <br/>
+        手机号:<input type="text" maxlength="11">
+        <br/>
+        <input type="button" value="获取短信验证码">
+        <br/>
+        <!-- submit定义提交按钮  value修改其中文字-->
+        <!-- 点击提交按钮可以把表单元素提交给后台 -->
+        <input type="submit" value="提交">
+        <!-- reset为重置按钮 还原表单元素初始默认状态-->
+        <input type="reset" value="重置">
+        <br>
+        <!-- 文件域 用于上传文件 -->
+        上传头像:<input type="file">
+        <br>
+        <!-- 下拉表单元素 -->
+        <!-- select选择 option选项 -->
+        籍贯:
+        <select>
+            <option>河南</option>
+            <option>山东</option>
+            <option>东北</option>
+            <option>四川</option>
+            <option>北京</option>
+            <option>上海</option>
+            <option>火星</option>
+            <!-- selected为默认选项 -->
+            <option selected="selected">--请选择--</option>
+        </select> 
+        <br>
+        <!-- textarea文本域标签 -->
+        反馈:
+        <textarea cols="10" rows="2">
+
+        </textarea>
+    </form>
+</body>
+</html>
